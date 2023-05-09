@@ -5,7 +5,11 @@ import vue from '@vitejs/plugin-vue'
 
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite';
-import { ArcoResolver } from 'unplugin-vue-components/resolvers';
+import { 
+  ArcoResolver,
+  VueUseComponentsResolver,
+  VueUseDirectiveResolver
+} from 'unplugin-vue-components/resolvers';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -20,7 +24,7 @@ export default defineConfig({
         /\.md$/ // .md
       ],
       // imports 指定自动引入的包位置（名）
-      imports: ['vue', 'pinia', 'vue-router'],
+      imports: ['vue', 'pinia', 'vue-router', '@vueuse/core'],
       // 生成相应的自动导入json文件。
       eslintrc: {
         // 启用
@@ -40,8 +44,10 @@ export default defineConfig({
       resolvers: [
         ArcoResolver({
           sideEffect: true
-        })
-      ]
+        }),
+        VueUseComponentsResolver(),
+        VueUseDirectiveResolver(),
+      ],
     })
   ],
   resolve: {
