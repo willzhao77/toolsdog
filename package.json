@@ -17,6 +17,8 @@
   },
   "devDependencies": {
     "@arco-design/web-vue": "^2.45.3",
+    "@iconify-json/ep": "^1.1.10",
+    "@iconify-json/raphael": "^1.1.4",
     "@rushstack/eslint-patch": "^1.2.0",
     "@vitejs/plugin-vue": "^4.2.1",
     "@vue/eslint-config-prettier": "^7.1.0",
@@ -24,6 +26,7 @@
     "eslint-plugin-vue": "^9.11.0",
     "prettier": "^2.8.8",
     "unplugin-auto-import": "^0.15.3",
+    "unplugin-icons": "^0.16.1",
     "unplugin-vue-components": "^0.24.1",
     "vite": "^4.3.4"
   }

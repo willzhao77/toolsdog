@@ -10,6 +10,11 @@
   </a-space>
   <!-- 这里 -->
   <HelloWorld />
+  <div>
+    <icon-ep-alarm-clock class="" />
+    <icon-raphael-bolt class="" />
+    <icon-home-copy class=""/>
+  </div>
 </template>
 
 <script setup>
