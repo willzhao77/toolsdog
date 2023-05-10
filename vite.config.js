@@ -11,7 +11,7 @@ import {
   ArcoResolver,
   VueUseComponentsResolver,
   VueUseDirectiveResolver
-} from 'unplugin-vue-components/resolvers';
+} from 'unplugin-vue-components/resolvers'
 // icon 插件
 import Icons from "unplugin-icons/vite"
 // icon 自动引入解析器

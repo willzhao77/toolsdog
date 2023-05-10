@@ -20,7 +20,7 @@
 <script setup>
 const handleClickMini = () => {
   AMessage.info('hello isboyjc, click mini AButton!')
-};
+}
 </script>
 
 <style scoped>
