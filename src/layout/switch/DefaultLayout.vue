@@ -28,6 +28,7 @@ export default {
 
                     <!-- right插槽 -->
                     <template #right>
+                      <SwitchLayout />
                       <Github />
                     </template>
                 </Navbar>

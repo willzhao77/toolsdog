@@ -27,7 +27,10 @@ const handleCollapse = (val, type) => {
           <Navbar>
             <template #left> <Logo /> </template>
 
-            <template #right> <Github /> </template>
+            <template #right>
+              <Github />
+              <SwitchLayout />
+            </template>
           </Navbar>
         </a-layout-header>
       </a-affix>
