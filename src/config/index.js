@@ -28,7 +28,18 @@ const configSource = {
   // 服务端接口路径
   serverUrl: ENV.VITE_BASE_SERVER_URL,
   //
-  github: 'https://github.com/willzhao77/toolsdog'
+  github: 'https://github.com/willzhao77/toolsdog',
+  // 备案号
+  icp: '京ICP备2022xxxxxxx号',
+  // 个人配置
+  me: {
+    name: 'will',
+    // 公众号
+    gzhName: '前端',
+    gzhUrl: 'http://qiniuimages.isboyjc.com/picgo/202210030159449.jpeg',
+    // github
+    github: 'https://github.com/willzhao77'
+  }
 }
 
 /**

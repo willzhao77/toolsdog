@@ -29,7 +29,9 @@
             <component :is="Component" />
           </router-view>
         </a-layout-content>
-        <a-layout-footer> Footer </a-layout-footer>
+        <a-layout-footer> 
+          <Footer />
+        </a-layout-footer>
       </a-layout>
     </div>
   </div>
