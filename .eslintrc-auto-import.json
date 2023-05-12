@@ -1,6 +1,5 @@
 {
   "globals": {
-    "AMessage": true,
     "Component": true,
     "ComponentPublicInstance": true,
     "ComputedRef": true,
