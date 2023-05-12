@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+import switchLayoutList from '@/layout/switch/index.js'
+console.log(switchLayoutList)
+</script>
 
 <template>
   <div class="switch-index">

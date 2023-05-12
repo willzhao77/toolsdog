@@ -1,3 +1,12 @@
+<script>
+import IconRiLayoutTopFill from '~icons/ri/layout-top-fill'
+export default {
+  name: 'DefaultLayout',
+  icon: IconRiLayoutTopFill,
+  title: '默认布局'
+}
+</script>
+
 <script setup></script>
 
 <template>
