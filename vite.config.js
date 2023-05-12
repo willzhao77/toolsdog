@@ -113,7 +113,7 @@ export default defineConfig(({ mode }) => {
       }),
       Components({
         // imports 指定组件所在位置，默认为 src/components
-        dirs: ['src/components/', 'src/view/'],
+        dirs: ['src/components/', 'src/view/', 'src/layout'],
         // 需要去解析的文件
         include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
         resolvers: [

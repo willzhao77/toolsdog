@@ -1,9 +1,9 @@
 /*
- * @LastEditors: isboyjc
+ * @LastEditors: will
  * @Description: 全局config配置文件
- * @Date: 2022-09-17 14:35:02
- * @LastEditTime: 2022-09-17 14:35:02
- * @Author: isboyjc
+ * @Date: 2023-05-17 14:35:02
+ * @LastEditTime: 2023-05-17 14:35:02
+ * @Author: will
  */
 
 // 获取环境变量
@@ -26,11 +26,13 @@ const configSource = {
   // 模拟数据接口路径
   mockBaseUrl: ENV.VITE_BASE_MOCK_URL,
   // 服务端接口路径
-  serverUrl: ENV.VITE_BASE_SERVER_URL
+  serverUrl: ENV.VITE_BASE_SERVER_URL,
+  //
+  github: 'https://github.com/willzhao77/toolsdog'
 }
 
 /**
- * @Author isboyjc
+ * @Author will
  * @Date 2022-09-17 14:35:02
  * @description 设置全局配置
  * @param {Object} cfg 配置项
@@ -56,7 +58,7 @@ resetConfig()
 
 /**
  * @Author isboyjc
- * @Date 2022-09-17 14:35:02
+ * @Date 2023-05-17 14:35:02
  * @description 获取全局配置
  * @param {String} key 配置项，支持 'a.b.c' 的方式获取
  * @return {Object} 新的全局配置 config
