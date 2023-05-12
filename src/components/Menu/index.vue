@@ -1,27 +1,33 @@
 <script setup>
-import { menuRouterFormatList } from '@/router/menuRouter.js'
+import { menuRouterFormat, menuRouter } from '@/router/menuRouter.js'
 
-// 菜单数据
-const menuList = ref(menuRouterFormatList)
+// 新增
+const props = defineProps({
+  mode: {
+    type: String,
+    default: 'horizontal'
+  }
+})
+// 菜单模式，horizontal 水平，vertical 垂直
+const mode = toRef(props, 'mode')
+
+const menuList = ref(menuRouterFormat(menuRouter))
 
 const router = useRouter()
-// 子菜单点击事件
 const onClickMenuItem = key => {
   router.push(key)
 }
 
 const route = useRoute()
-// 当前选中菜单
 const selectedKeys = computed(() => [route.path])
 </script>
-
 <template>
   <a-menu
     class="menu"
     auto-open-selected
     :selected-keys="selectedKeys"
     @menuItemClick="onClickMenuItem"
-    mode="horizontal"
+    :mode="mode"
     :accordion="true"
   >
     <MenuItem v-for="menu of menuList" :key="menu.path" :menu="menu" />

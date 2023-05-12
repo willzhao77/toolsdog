@@ -3,7 +3,8 @@
 <template>
   <div class="switch-index">
     <!-- <component :is="" /> -->
-    <DefaultLayout />
+    <!-- <DefaultLayout /> -->
+    <SidebarLayout />
   </div>
 </template>
 
